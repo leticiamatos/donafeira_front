@@ -19,6 +19,7 @@
   <!-- screens -->
   <link rel="stylesheet" type="text/css" href="styles/screen.css">
   <link rel="stylesheet" type="text/css" href="styles/responsivo.css">
+  <link rel="stylesheet" type="text/css" href="styles/jcarousel/jcarousel.responsive.css">
   <!-- screens -->
 
   <!--[if lt IE 9]><script src="scripts/html5.js"></script><![endif]-->
