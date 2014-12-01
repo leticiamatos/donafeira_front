@@ -17,6 +17,10 @@
   <meta property="og:image" content="url_img_page" />
   <link rel="shortcut icon" type="image/x-icon" href="images/content/favicon.ico" />
   <!-- screens -->
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <!-- bootstrap -->
   <link rel="stylesheet" type="text/css" href="styles/screen.css">
   <link rel="stylesheet" type="text/css" href="styles/responsivo.css">
   <link rel="stylesheet" type="text/css" href="styles/jcarousel/jcarousel.responsive.css">
