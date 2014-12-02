@@ -21,8 +21,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
   <!-- bootstrap -->
-  <link rel="stylesheet" type="text/css" href="styles/screen.css">
-  <link rel="stylesheet" type="text/css" href="styles/responsivo.css">
+  <link rel="stylesheet" type="text/css" href="styles/applications.css">
   <link rel="stylesheet" type="text/css" href="styles/jcarousel/jcarousel.responsive.css">
   <!-- screens -->
 
@@ -35,7 +34,5 @@
   <!-- fonts -->
 </head>
 <body>
-  <header id="header">
-    <?php include "layout/header.php"; ?>
-  </header>
+  <?php include "layout/header.php"; ?>
   <section id="container">

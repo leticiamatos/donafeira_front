@@ -10,7 +10,7 @@
 /* =============================================================================
    Reset
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small,strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,  caption, figure{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;vertical-align:baseline;text-decoration:none}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small,strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,  caption, figure{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;vertical-align:baseline;text-decoration:none;outline:none!important;}
 strong{font-weight:bold;}
 :focus{outline:0}
 body{font-family:'Lato',Arial,Verdana,Tahoma,Helvetica, sans-serif;background:#fff url(../images/content/bg.gif)}
@@ -35,36 +35,95 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
 /* =============================================================================
    Geral
    ========================================================================== */
-   .radius{-moz-border-radius: 8px;border-radius: 8px;-webkit-border-radius: 8px;-o-border-radius: 8px;-ms-border-radius: 8px;}
-   .shadow{box-shadow:4px 5px 0px #F1F1F1;-moz-box-shadow:4px 5px 0px #F1F1F1;-webkit-box-shadow:4px 5px 0px #F1F1F1;-o-box-shadow:4px 5px 0px #F1F1F1;-ms-box-shadow:4px 5px 0px #F1F1F1;}
-   .transition{transition:0.2s;-moz-transition:0.2s;-webkit-transition:0.2s;-o-transition:0.2s;-ms-transition:0.2s;}
-   /* margins */
-   .noMarginTop{margin-top:0px!important;}
-   .noMarginRight{margin-right:0px!important;}
-   .noMarginBottom{margin-bottom:0px!important;}
-   .noMarginLeft{margin-left:0px!important;}
-   /* padding */
-   .noPaddingTop{padding-top:0px!important;}
-   .noPaddingRight{padding-right:0px!important;}
-   .noPaddingBottom{padding-bottom:0px!important;}
-   .noPaddingLeft{padding-left:0px!important;}
-   /* noBg */
-   .noBg{background:none!important;}
-   /* border */
-   .noBorderTop{border-top:0px!important;}
-   .noBorderRight{border-right:0px!important;}
-   .noBorderBottom{border-bottom:0px!important;}
-   .noBorderLeft{border-left:0px!important;}
-   /* alert */
-   .alert {margin-bottom: 0 !important}
-/* =============================================================================
-   Typography
-   ========================================================================== */
+  a{
+    &:hover{
+      text-decoration:none!important;
+    }
+  }
 
 /* =============================================================================
    Header
    ========================================================================== */
-   #header{}
+   #header{
+    height:195px;
+    padding-top:30px;
+    position:relative;
+    div{
+      position:relative;
+    }
+    #logo{
+      position:absolute;
+      top:29px;
+      left:15px;
+      z-index:1;
+    }
+    #wrap-search{
+      width:490px;
+      margin-left:-490px/2;
+      position:absolute;
+      top:90px;
+      left:50%;
+      z-index:2;
+      #arrow-search{
+        position:absolute;
+        top:-28px;
+        left:252px;
+      }
+      label{
+        .f-secundary;
+        font-size:20px;
+        color:@black;
+        display:block;
+      }
+      input[type=text]{
+        width:100%;
+        height:44px;
+        padding:10px 49px 10px 10px;
+        .radius;
+        .no-border;
+        .transition;
+      }
+      button{
+        .f-white;
+        font-size:33px;
+        position:absolute;
+        bottom:0px;
+        right:5px;
+        opacity:1;
+        .no-border;
+        .no-background;
+        &:hover{
+          opacity:0.8;
+        }
+      }
+    }
+    /* wrap-cart */
+    #wrap-cart{
+      width:92px;
+      height:116px;
+      position:absolute;
+      bottom:0;
+      right:30px;
+      #cart{
+        background:url(../images/header/cart.png) no-repeat 0 0;
+        display:block;
+        padding-top:85px;
+        &:hover{
+          background-position:0px -174px;
+        }
+        #value-cart{
+          font-size:13px;
+          .t-bold;
+        }
+        &:hover #value-cart{
+          .f-green;
+        }
+      }
+      #wrap-itens-cart{
+        display:none;
+      }
+    }
+   }
 /* =============================================================================
    Container
    ========================================================================== */
@@ -75,22 +134,3 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
    Footer
    ========================================================================== */
    #footer{}
-
-
-.jcarousel {
-    position: relative;
-    overflow: hidden;
-}
-.jcarousel ul {
-    width: 20000em;
-    position: relative;
-
-    /* Optional, required in this case since it's a <ul> element */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.jcarousel li {
-    /* Required only for block elements like <li>'s */
-    float: left;
-}
