@@ -1,3 +1,9 @@
+<div id="wrap-flag">
+  <img src="images/header/arrow-menu.png" class="arrow" />
+  <nav id="nav-user" class="blue">
+     <?php include "layout/menu.php"; ?>
+  </nav>
+</div>
 <header id="header" class="container">
   <h1 id="logo">
     <a href="#">
@@ -11,12 +17,6 @@
     <button type="submit" id="submit-search">
         <i class="fa fa-search"></i>
     </button>
-  </div>
-  <div id="wrap-flag">
-    <span class="arrow"></span>
-    <nav id="nav-user" class="blue">
-       <?php include "layout/menu.php"; ?>
-    </nav>
   </div>
   <div id="wrap-cart">
     <a href="#" id="cart">
