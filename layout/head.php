@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
   <!-- bootstrap -->
   <link rel="stylesheet" type="text/css" href="styles/applications.css">
+  <link rel="stylesheet" type="text/css" href="styles/slideLp.css">
   <link rel="stylesheet" type="text/css" href="styles/jcarousel/jcarousel.responsive.css">
   <!-- screens -->
 
@@ -35,4 +36,3 @@
 </head>
 <body>
   <?php include "layout/header.php"; ?>
-  <section id="container">

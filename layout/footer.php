@@ -1,4 +1,3 @@
-  </section><!-- end container -->
   <footer id="footer">
     <section id="wrapFooter" class="container">
         <div class="col-md-2">
