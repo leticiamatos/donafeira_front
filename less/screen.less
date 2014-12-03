@@ -36,8 +36,10 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
    Geral
    ========================================================================== */
   a{
+    .transition;
     &:hover{
       text-decoration:none!important;
+      .transition;
     }
   }
 
@@ -58,7 +60,7 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       z-index:1;
     }
     #wrap-search{
-      width:490px;
+      width:50%;
       margin-left:-490px/2;
       position:absolute;
       top:90px;
@@ -108,8 +110,10 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
         background:url(../images/header/cart.png) no-repeat 0 0;
         display:block;
         padding-top:85px;
+        .no-transition;
         &:hover{
           background-position:0px -174px;
+          .no-transition;
         }
         #value-cart{
           font-size:13px;
@@ -126,10 +130,10 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
    }
    /* wrap-flag */
    #wrap-flag{
-    width:258px;
     position:absolute;
     top:30px;
     right:0;
+    z-index:3;
     .arrow{
       width:10px;
       position:absolute;
@@ -137,8 +141,26 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       left:-10px;
     }
     #nav-user{
+      height:29px;
+      padding:0 20px 0;
       .bg-blue;
-      padding:10px 20px 10px 10px;
+      ul{
+        li{
+          display:block;
+          margin-right:24px;
+          padding-top:3px;
+          float:left;
+          a{
+            font-size:13px;
+            .f-green-2;
+            .t-uppercase;
+            .t-bold;
+            &:hover{
+              .f-orange;
+            }
+          }
+        }
+      }
     }
    }
 /* =============================================================================
@@ -150,4 +172,37 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
 /* =============================================================================
    Footer
    ========================================================================== */
-   #footer{}
+   #footer{
+    width:100%;
+    padding-top:20px;
+    #menu-footer{
+      padding-top:28px;
+      a{
+        font-size:14px;
+        display:inline-block;
+        margin-right:9px;
+        .f-black;
+        &:hover{
+          .f-orange;
+        }
+      }
+    }
+    h3,h4{
+      font-size:20px;
+      margin-bottom:5px;
+      a{
+        &:hover{
+          .f-black;
+        }
+      }
+    }
+    h5,h6{
+      font-size:14px;
+      margin-bottom:5px;
+      a{
+        &:hover{
+          .f-black;
+        }
+      }
+    }
+   }
