@@ -1,3 +1,66 @@
+<div class="wrap-full b-top-gray pad-bottom-mini pad-top-mini">
+  <div id="wrap-category" class="container">
+    <div id="cat-list">
+      <div class="cat">
+        <a href="#">
+          <figure>
+            <img src="images/temporary/category.png" alt="Name category" />
+          </figure>
+          <span>Name Category</span>
+        </a>
+      </div>
+      <div class="cat">
+        <a href="#">
+          <figure>
+            <img src="images/temporary/category2.png" alt="Name category" />
+          </figure>
+          <span>Name Category</span>
+        </a>
+      </div>
+      <div class="cat">
+        <a href="#">
+          <figure>
+            <img src="images/temporary/category.png" alt="Name category" />
+          </figure>
+          <span>Name Category</span>
+        </a>
+      </div>
+      <div class="cat">
+        <a href="#">
+          <figure>
+            <img src="images/temporary/category2.png" alt="Name category" />
+          </figure>
+          <span>Name Category</span>
+        </a>
+      </div>
+      <div class="cat">
+        <a href="#">
+          <figure>
+            <img src="images/temporary/category.png" alt="Name category" />
+          </figure>
+          <span>Name Category</span>
+        </a>
+      </div>
+      <div class="cat">
+        <a href="#">
+          <figure>
+            <img src="images/temporary/category2.png" alt="Name category" />
+          </figure>
+          <span>Name Category</span>
+        </a>
+      </div>
+      <div class="cat">
+        <a href="#">
+          <figure>
+            <img src="images/temporary/category.png" alt="Name category" />
+          </figure>
+          <span>Name Category</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <section id="highlight">
    <section class="wrapHighlight">
       <ul class="listCont">
@@ -28,13 +91,65 @@
   <span class="line right"></span>
 </div>
 
-<div class="container bg-white b-bottom-gray pad-bottom pad-top">
+<div class="container bg-white b-bottom-gray pad-bottom pad-top over-hidden">
     <div id="main">
-        <div class="col-md-6">
-            oi
-        </div>
-        <div class="col-md-6">
-            oi
-        </div>
+      <ul class="list-itens">
+          <li class="col-xs-6 col-md-3 m-bottom-mini">
+            <figure>
+              <img src="images/temporary/banana.png" alt="banana"/>
+            </figure>
+            <span>Aliquam ac sem</span>
+            <strong>R$  50,00 / kg</strong>
+          </li>
+          <li class="col-xs-6 col-md-3 m-bottom-mini">
+            <figure>
+              <img src="images/temporary/manga.png" alt="banana"/>
+            </figure>
+            <span>Aliquam ac sem</span>
+            <strong>R$  50,00 / kg</strong>
+          </li>
+          <li class="col-xs-6 col-md-3 m-bottom-mini">
+            <figure>
+              <img src="images/temporary/feijao.png" alt="banana"/>
+            </figure>
+            <span>Aliquam ac sem</span>
+            <strong>R$  50,00 / kg</strong>
+          </li>
+          <li class="col-xs-6 col-md-3 m-bottom-mini">
+            <figure>
+              <img src="images/temporary/iogurte.png" alt="banana"/>
+            </figure>
+            <span>Aliquam ac sem</span>
+            <strong>R$  50,00 / kg</strong>
+          </li>
+          <li class="col-xs-6 col-md-3 m-bottom-mini">
+            <figure>
+              <img src="images/temporary/banana.png" alt="banana"/>
+            </figure>
+            <span>Aliquam ac sem</span>
+            <strong>R$  50,00 / kg</strong>
+          </li>
+          <li class="col-xs-6 col-md-3 m-bottom-mini">
+            <figure>
+              <img src="images/temporary/manga.png" alt="banana"/>
+            </figure>
+            <span>Aliquam ac sem</span>
+            <strong>R$  50,00 / kg</strong>
+          </li>
+          <li class="col-xs-6 col-md-3 m-bottom-mini">
+            <figure>
+              <img src="images/temporary/feijao.png" alt="banana"/>
+            </figure>
+            <span>Aliquam ac sem</span>
+            <strong>R$  50,00 / kg</strong>
+          </li>
+          <li class="col-xs-6 col-md-3 m-bottom-mini">
+            <figure>
+              <img src="images/temporary/iogurte.png" alt="banana"/>
+            </figure>
+            <span>Aliquam ac sem</span>
+            <strong>R$  50,00 / kg</strong>
+          </li>
+      </ul>
     </div>
 </div>

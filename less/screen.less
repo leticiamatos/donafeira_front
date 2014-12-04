@@ -35,6 +35,12 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
 /* =============================================================================
    Geral
    ========================================================================== */
+  /* wrap-full */
+  .wrap-full{
+    width:100%;
+    positoin:absolute;
+  }
+  /* links */
   a{
     .transition;
     &:hover{
@@ -178,14 +184,19 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
    Container
    ========================================================================== */
    .list-itens{
+    li{
+      min-height:280px;
+    }
     figure{
       text-align:center;
-      width:100%;
+      width:inherit;
       height:202px;
-      display:table;
-      img{
-        display:table-cell;
+      display:table-cell;
         vertical-align:middle;
+      img{
+        max-width:100%;
+        display:block;
+        margin:0 auto;
       }
     }
     span{
@@ -247,6 +258,52 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       }
       &.right{
         right:0;
+      }
+    }
+   }
+   /* wrap-category */
+   #wrap-category{
+    overflow-x:auto;
+    #cat-list{
+      .cat{
+        width:105px;
+        display:inline-block;
+        margin-right:64px;
+        padding-top:5px;
+        .t-center;
+        transform: scale(1,1);
+        -ms-transform: scale(1,1); /* IE 9 */
+        -webkit-transform: scale(1,1); /* Chrome, Safari, Opera */
+        .transition;
+        figure{
+          text-align:center;
+          width:107px;
+          height:73px;
+          display:table-cell;
+          margin-bottom:16px;
+          vertical-align:middle;
+        }
+        img{
+          display:block;
+          margin:0 auto;
+        }
+        a{
+          font-size:12px;
+          display:block;
+          .f-black;
+          &:hover span{
+            color:@orange;
+          }
+        }
+        &:hover img{
+          transform: scale(1.1,1.1);
+          -ms-transform: scale(1.1,1.1); /* IE 9 */
+          -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+          .transition;
+        }
+        &:last-child{
+          margin-right:0;
+        }
       }
     }
    }

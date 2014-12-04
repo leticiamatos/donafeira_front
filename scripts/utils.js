@@ -2,6 +2,7 @@ Application = {
   init: function () {
     this.menuPosition();
     this.cart();
+    this.sizeCatList();
   },
   menuPosition: function(){
     function sizeMenu(){
@@ -29,19 +30,31 @@ Application = {
         var self = $(this);
 
         if($("#cart").hasClass("active")){
-            console.log(0)
             $("#cart").removeClass('active');
             $("#wrap-itens-cart").animate({
-                opacity: '0',
+                opacity: '0'
+            },200).css({
                 bottom: "400px"
-            },200);
+            });
         }else{
             $("#cart").addClass('active');
-            $("#wrap-itens-cart").animate({
-                opacity: '1',
+            $("#wrap-itens-cart").css({
                 bottom: "-" + ($("#header").outerHeight() - 75) + "px"
-            },700);
+            }).animate({
+                opacity: '1'
+            },400);
         }
+    });
+  },
+
+  sizeCatList: function(){
+    var cats = $(".cat"),
+        catsLength = cats.length,
+        catsWidth = cats.outerWidth(),
+        catsMargin = parseInt(cats.css('margin-right'));
+
+    $("#cat-list").css({
+      width: (catsWidth*catsLength + (catsMargin*catsLength)) + "px"
     });
   }
 
