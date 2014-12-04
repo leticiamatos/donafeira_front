@@ -44,5 +44,26 @@
                     return '<a href="#' + page + '">' + page + '</a>';
                 }
             });
+
+            // var setup = function(data) {
+            // var html = '<ul>';
+
+            // $.each(data.items, function() {
+            //         html += '<li><img src="' + this.src + '" alt="' + this.title + '"></li>';
+            //     });
+
+            //     html += '</ul>';
+
+            //     // Append items
+            //     jcarousel
+            //         .html(html);
+
+            //     // Reload carousel
+            //     jcarousel
+            //         .jcarousel('reload');
+            // };
+
+            // $.getJSON('data.json', setup);
+
     });
 })(jQuery);

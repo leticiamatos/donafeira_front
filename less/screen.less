@@ -27,11 +27,11 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
 /* =============================================================================
    Base
    ========================================================================== */
-::-moz-selection {background:#fe57a1;color:#fff;text-shadow:none}
-::-webkit-selection {background:#fe57a1;color:#fff;text-shadow:none}
-::-o-selection {background:#fe57a1;color:#fff;text-shadow:none}
-::-ms-selection {background:#fe57a1;color:#fff;text-shadow:none}
-::selection {background:#fe57a1;color:#fff;text-shadow:none}
+::-moz-selection {background:#00722D;color:#fff;text-shadow:none}
+::-webkit-selection {background:#00722D;color:#fff;text-shadow:none}
+::-o-selection {background:#00722D;color:#fff;text-shadow:none}
+::-ms-selection {background:#00722D;color:#fff;text-shadow:none}
+::selection {background:#00722D;color:#fff;text-shadow:none}
 /* =============================================================================
    Geral
    ========================================================================== */
@@ -48,7 +48,96 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       .transition;
     }
   }
-
+  /* cart-add-box */
+  .cart-add-box{
+    width:156px;
+    min-height:160px;
+    &.float{
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:20;
+    }
+    .quant-box{
+      display:block;
+      margin-bottom:6px;
+      padding:15px 6px;
+      .t-center;
+      span{
+        font-size:16px;
+        .f-black;
+      }
+    }
+    .quant-tool{
+      margin-bottom:6px;
+      .over-hidden;
+      div{
+        padding:4px 0!important;
+        .no-margin;
+        .f-white;
+        input{
+          width:100%;
+          height:28px;
+          .t-center;
+          border:1px solid #fff;
+        }
+        &.quant-input{
+          padding:0!important;
+          .f-black;
+        }
+        &.more:hover,&.less:hover{
+          cursor:pointer;
+          .bg-green;
+          .transition;
+        }
+      }
+    }
+    .add-cart-bt{
+      font-size:16px;
+      background:@green url(../images/content/cart_small.png) no-repeat 8% 50%;
+      display:block;
+      padding:8px 13px 8px 60px;
+      line-height:18px;
+      &:hover{
+        background:@orange url(../images/content/cart_small.png) no-repeat 8% 50%;
+      }
+    }
+  }
+  /* Styled scrollbars */
+  .iScrollHorizontalScrollbar {
+    position: absolute;
+    z-index: 9999;
+    height: 3px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    overflow: hidden;
+  }
+  .iScrollHorizontalScrollbar.iScrollBothScrollbars {
+    right: 18px;
+  }
+  .iScrollVerticalScrollbar {
+    position: absolute;
+    z-index: 9999;
+    width: 16px;
+    bottom: 2px;
+    top: 2px;
+    right: 2px;
+    overflow: hidden;
+  }
+  .iScrollVerticalScrollbar.iScrollBothScrollbars {
+    bottom: 18px;
+  }
+  .iScrollIndicator {
+    position: absolute;
+    background: @gray;
+  }
+  .iScrollHorizontalScrollbar .iScrollIndicator {
+    height: 100%;
+  }
+  .iScrollVerticalScrollbar .iScrollIndicator {
+    width: 100%;
+  }
 /* =============================================================================
    Header
    ========================================================================== */
@@ -186,6 +275,11 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
    .list-itens{
     li{
       min-height:280px;
+      .transition;
+      &:hover figure{
+        opacity:0.5;
+        .transition;
+      }
     }
     figure{
       text-align:center;
@@ -263,8 +357,38 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
    }
    /* wrap-category */
    #wrap-category{
-    overflow-x:auto;
+    position: relative;
+    height: 108px;
+    overflow: hidden;
+
+    /* Prevent native touch events on Windows */
+    -ms-touch-action: none;
+
+    /* Prevent the callout on tap-hold and text selection */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /* Prevent text resize on orientation change, useful for web-apps */
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
     #cat-list{
+      position: absolute;
+
+      /* Prevent elements to be highlighted on tap */
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+      /* Put the scroller into the HW Compositing layer right from the start */
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0);
       .cat{
         width:105px;
         display:inline-block;

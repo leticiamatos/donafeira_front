@@ -34,5 +34,6 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- fonts -->
 </head>
-<body>
+<body onload="loaded()">
+  <?php include "layout/cart-add-box.php"; ?>
   <?php include "layout/header.php"; ?>
