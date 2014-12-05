@@ -5,6 +5,7 @@
 <script src="scripts/jcarousel/jcarousel.responsive.js" type="text/javascript"></script>
 <script src="scripts/slideLp/slideLp.js" type="text/javascript"></script>
 <script src="scripts/slideLp/highlight.js" type="text/javascript"></script>
+<script src="scripts/cart/cart.js" type="text/javascript"></script>
 <script src="scripts/utils.js" type="text/javascript"></script>
 <script src="scripts/iscroll/iscroll.js" type="text/javascript"></script>
 <script src="scripts/iscroll/scroll.js" type="text/javascript"></script>

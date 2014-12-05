@@ -1,7 +1,6 @@
 Application = {
   init: function () {
     this.menuPosition();
-    this.cart();
     this.sizeCatList();
   },
   menuPosition: function(){
@@ -23,28 +22,6 @@ Application = {
         }
     });
 
-  },
-
-  cart: function(){
-    $("#wrap-cart").on('click', function(){
-        var self = $(this);
-
-        if($("#cart").hasClass("active")){
-            $("#cart").removeClass('active');
-            $("#wrap-itens-cart").animate({
-                opacity: '0'
-            },200).css({
-                bottom: "400px"
-            });
-        }else{
-            $("#cart").addClass('active');
-            $("#wrap-itens-cart").css({
-                bottom: "-" + ($("#header").outerHeight() - 75) + "px"
-            }).animate({
-                opacity: '1'
-            },400);
-        }
-    });
   },
 
   sizeCatList: function(){

@@ -99,28 +99,28 @@
               <img src="images/temporary/banana.png" alt="banana"/>
             </figure>
             <span>Aliquam ac sem</span>
-            <strong>R$  50,00 / kg</strong>
+            <strong>R$<span class="price-prod">3,90</span> / kg</strong>
           </li>
           <li class="col-xs-6 col-md-3 m-bottom-mini">
             <figure>
               <img src="images/temporary/manga.png" alt="banana"/>
             </figure>
             <span>Aliquam ac sem</span>
-            <strong>R$  50,00 / kg</strong>
+            <strong>R$<span class="price-prod">2,05</span> / kg</strong>
           </li>
           <li class="col-xs-6 col-md-3 m-bottom-mini">
             <figure>
               <img src="images/temporary/feijao.png" alt="banana"/>
             </figure>
             <span>Aliquam ac sem</span>
-            <strong>R$  50,00 / kg</strong>
+            <strong>R$<span class="price-prod">3,75</span> / kg</strong>
           </li>
           <li class="col-xs-6 col-md-3 m-bottom-mini">
             <figure>
               <img src="images/temporary/iogurte.png" alt="banana"/>
             </figure>
             <span>Aliquam ac sem</span>
-            <strong>R$  50,00 / kg</strong>
+            <strong>R$<span class="price-prod">4,50</span> / kg</strong>
           </li>
       </ul>
     </div>
