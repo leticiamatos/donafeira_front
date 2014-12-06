@@ -6,14 +6,14 @@
 </div>
 <header id="header" class="container">
   <h1 id="logo">
-    <a href="#">
+    <a href="index.php">
       <img src="images/header/dona_feira.png" alt="Dona Feira" />
     </a>
   </h1>
   <div id="wrap-search">
     <img id="arrow-search" src="images/content/arrow.png" />
     <label for="list" class="">Comece sua lista de compras aqui</label>
-    <input type="text" name="list" class="box-shadow bg-orange f-white">
+    <input type="text" name="list" id="search-bar" class="box-shadow bg-orange f-white">
     <button type="submit" id="submit-search">
         <i class="fa fa-search"></i>
     </button>

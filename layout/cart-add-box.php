@@ -10,4 +10,5 @@
     <span class="value-prod">R$<span></span></span>
   </div>
   <a href="#" class="add-cart-bt f-white box-shadow radius2">adicionar<br />ao carrinho</a>
+  <span class="add-cart-bt f-white box-shadow radius2 active">item já<br />adicionado</span>
 </div>

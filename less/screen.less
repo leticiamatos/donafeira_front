@@ -48,6 +48,16 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       .transition;
     }
   }
+  /* p */
+  p{
+    font-size:14px;
+    line-height:25px;
+    .f-black;
+    margin-bottom:20px;
+    &:last-child{
+      margin-bottom:0;
+    }
+  }
   /* cart-add-box */
   .cart-add-box{
     width:156px;
@@ -102,6 +112,11 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       &:hover{
         background:@orange url(../images/content/cart_small.png) no-repeat 8% 50%;
       }
+      &.active{
+        background:@gray url(../images/content/cart_small.png) no-repeat 8% 50%;
+        cursor:default;
+        .t-italic;
+      }
     }
   }
   /* Styled scrollbars */
@@ -138,6 +153,18 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
   }
   .iScrollVerticalScrollbar .iScrollIndicator {
     width: 100%;
+  }
+  /* links-how */
+  .links-how{
+    a{
+      font-size:30px;
+      .f-secundary;
+      .f-orange;
+      .block;
+      &:hover,&.active{
+        .f-green;
+      }
+    }
   }
 /* =============================================================================
    Header
@@ -294,7 +321,7 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
         margin:0 auto;
       }
     }
-    span{
+    span, a{
       font-size:14px;
       margin-bottom:10px;
       .f-black;
@@ -309,6 +336,12 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       .t-center;
       span{
         display:inline!important;
+      }
+    }
+    a{
+      .f-orange;
+      &:hover{
+        .f-green;
       }
     }
    }
@@ -335,7 +368,6 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
     .titles{
       display:block;
       margin:0 auto;
-      .t-center;
       h2{
         font-size:30px;
         .f-secundary;
@@ -437,12 +469,78 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       }
     }
    }
+   /* wrap-how-box */
+   #wrap-how-box{
+    width:448px;
+    max-width:100%;
+    display:none;
+    position:absolute;
+    z-index:99;
+    #arrow-indicate-how{
+      width: 0;
+      height: 0;
+      border-left: 22px solid transparent;
+      border-right: 22px solid transparent;
+      border-bottom: 22px solid @green;
+      position:relative;
+      .block;
+    }
+    #how-box{
+      background:@green;
+      width:100%;
+      display:block;
+      margin:0 auto;
+      padding:18px;
+      position:relative;
+      overflow:hidden;
+      .radius2;
+      h3{
+        text-transform:lowercase;
+        font-size:30px;
+        .f-secundary;
+        .f-white;
+      }
+      p{
+        .f-white;
+      }
+      a{
+        font-size:12px;
+        background:url(../images/content/bt_navegation.png) no-repeat 0 0;
+        width:76px;
+        display:inline-block;
+        padding:5px 0;
+        position:relative;
+        opacity:0.8;
+        .f-black;
+        .t-center;
+        &.next{
+          background-position:0 0;
+          .no-transition;
+          &:hover{
+           background-position:0 -30px;
+           opacity:1;
+           .no-transition;
+          }
+        }
+        &.prev{
+          background-position:-90px 0;
+          .no-transition;
+          left:62%;
+          &:hover{
+           background-position:-90px -30px;
+           opacity:1;
+           .no-transition;
+          }
+        }
+      }
+    }
+   }
 /* =============================================================================
    Footer
    ========================================================================== */
    #footer{
     width:100%;
-    padding-top:20px;
+    padding:20px 0;
     #menu-footer{
       padding-top:28px;
       a{

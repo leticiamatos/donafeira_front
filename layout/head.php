@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Site</title>
+  <title>Dona Feira</title>
   <meta name="language" content="pt-br" />
   <meta name="resource-type" content="document" />
   <meta name="author" content="Pianolab">
@@ -15,7 +15,7 @@
   <meta property="og:title" content="title_page" />
   <meta property="og:description" content="description_page" />
   <meta property="og:image" content="url_img_page" />
-  <link rel="shortcut icon" type="image/x-icon" href="images/content/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
   <!-- screens -->
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -36,4 +36,5 @@
 </head>
 <body onload="loaded()">
   <?php include "layout/cart-add-box.php"; ?>
+  <?php include "layout/how-box.php"; ?>
   <?php include "layout/header.php"; ?>
