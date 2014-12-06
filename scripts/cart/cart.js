@@ -85,11 +85,14 @@ ApplicationCart = {
 
     $(".cart-add-box.float").find(".more").on("click", function(){
         var quant = ++valueQuant,
-            valueQuantAl = parseInt(valueQuant),
-            mult = parseInt(valueLi)*parseInt(valueQuantAl);
+            valueQuantAl = valueQuant,
+            valueLiSp = valueLi.replace(/,/gi, "."),
+            mult = valueLiSp*valueQuantAl,
+            valRound = parseFloat(mult).toFixed(2),
+            valFinal = valRound.replace(".", ",");
 
         $(".cart-add-box.float").find(".quant-prod").val(quant);
-        $(".cart-add-box.float").find(".value-prod span").text(mult);
+        $(".cart-add-box.float").find(".value-prod span").text(valFinal);
 
     });
 
