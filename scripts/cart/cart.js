@@ -76,15 +76,17 @@ ApplicationCart = {
 
             valueLi = selfPrice;
 
+            $(".cart-add-box.float").find(".quant-prod").val(1);
+
         }
     });
 
-    // raise the price
-    var valueProd = parseInt($(".cart-add-box.float").find(".value-prod span").html()),
-        valueQuant = $(".cart-add-box.float").find(".quant-prod").val();
 
+    // add value
     $(".cart-add-box.float").find(".more").on("click", function(){
-        var quant = ++valueQuant,
+    // raise the price
+        var valueQuant = $(".cart-add-box.float").find(".quant-prod").val(),
+            quant = ++valueQuant,
             valueQuantAl = valueQuant,
             valueLiSp = valueLi.replace(/,/gi, "."),
             mult = valueLiSp*valueQuantAl,
@@ -93,7 +95,24 @@ ApplicationCart = {
 
         $(".cart-add-box.float").find(".quant-prod").val(quant);
         $(".cart-add-box.float").find(".value-prod span").text(valFinal);
+    });
 
+    // remove value
+    $(".cart-add-box.float").find(".less").on("click", function(){
+        var valueQuant = $(".cart-add-box.float").find(".quant-prod").val(),
+            quant = --valueQuant,
+            valueQuantAl = valueQuant,
+            valueLiSp = valueLi.replace(/,/gi, "."),
+            mult = valueLiSp*valueQuantAl,
+            valRound = parseFloat(mult).toFixed(2),
+            valFinal = valRound.replace(".", ",");
+
+        if(quant === 0){
+            $(".cart-add-box.float").find(".quant-prod").val(1);
+        }else{
+            $(".cart-add-box.float").find(".quant-prod").val(quant);
+            $(".cart-add-box.float").find(".value-prod span").text(valFinal);
+        }
     });
 
   }
