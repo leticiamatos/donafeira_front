@@ -115,6 +115,18 @@ ApplicationCart = {
         }
     });
 
+    // change value
+    $(".cart-add-box.float").find(".quant-prod").on("change", function(){
+        var valueQuant = $(".cart-add-box.float").find(".quant-prod").val(),
+            valueQuantAl = valueQuant,
+            valueLiSp = valueLi.replace(/,/gi, "."),
+            mult = valueLiSp*valueQuantAl,
+            valRound = parseFloat(mult).toFixed(2),
+            valFinal = valRound.replace(".", ",");
+
+        $(".cart-add-box.float").find(".value-prod span").text(valFinal);
+    });
+
   }
 
 };

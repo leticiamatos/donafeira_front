@@ -84,32 +84,28 @@
 
 /* prevButton / nextButton */
 .prevButton, .nextButton {
-    font-family: Verdana;
-    font-weight: lighter;
-    font-size: 20px;
-    color: #B1F6CB;
-    background: #BEF8CF;
+    font-size: 32px;
+    color: #fff;
+    background: #D96D00;
     display: block;
-    border: 2px solid #fff;
-    padding: 2px 7px;
+    padding: 3px 16px;
     position: absolute;
     top: 50%;
     z-index: 9999;
-    border-radius: 50px;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -o-border-radius: 50px;
-    -ms-border-radius: 50px;
-    box-shadow: 0px 1px 1px #000 inset;
-    -moz-box-shadow: 0px 1px 1px #000 inset;
-    -webkit-box-shadow: 0px 1px 1px #000 inset;
-    -o-box-shadow: 0px 1px 1px #000 inset;
-    -ms-box-shadow: 0px 1px 1px #000 inset;
+    border-radius: 50%;
+    opacity:0.8;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
+    transform: scale(0.8,0.8);
+    -ms-transform: scale(0.8,0.8); /* IE 9 */
+    -webkit-transform: scale(0.8,0.8); /* Chrome, Safari, Opera */
 }
 
 .prevButton {
@@ -120,22 +116,32 @@
     right: 20px;
 }
 
-.prevButton: hover, .nextButton:hover {
-    color: #08486B;
+.prevButton:hover, .nextButton:hover {
+    color: #fff;
+    background:#00722D;
+    opacity:1;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
+    transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
 }
 
-.prevButton: active, .nextButton:active {
-    color: #08486B;
+.prevButton:active, .nextButton:active, .prevButton:focus, .nextButton:focus {
+    color: #fff;
+    background:#00722D;
+    opacity:1;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
+    transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
 }
 
 /* thumbHoverCont */
@@ -355,5 +361,5 @@
     border:  transparent;
     background-color:  #B1F6CB;
     width: 1em;
-    height: 1em; 
+    height: 1em;
 }

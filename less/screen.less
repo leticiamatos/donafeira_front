@@ -43,7 +43,7 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
   /* links */
   a{
     .transition;
-    &:hover{
+    &:hover,&:focus{
       text-decoration:none!important;
       .transition;
     }
@@ -328,8 +328,10 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
    /* wrap-titles" */
    .wrap-titles{
     width:100%;
+    margin-bottom:10px;
     passing-bottom:5px;
     position:relative;
+    overflow:hidden;
     .titles{
       display:block;
       margin:0 auto;
