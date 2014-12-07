@@ -51,7 +51,7 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
   /* p */
   p{
     font-size:14px;
-    line-height:25px;
+    line-height:20px;
     .f-black;
     margin-bottom:20px;
     &:last-child{
@@ -69,6 +69,12 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       left:0;
       z-index:999;
     }
+    &.cont{
+      margin:0 auto;
+      .add-cart-bt{
+        .m-bottom;
+      }
+    }
     .quant-box{
       display:block;
       margin-bottom:6px;
@@ -77,6 +83,21 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       span{
         font-size:16px;
         .f-black;
+        .block;
+        span{
+          display:inline-block!important;
+        }
+      }
+      .value-prod-promo{
+        font-size:18px;
+        .f-orange;
+        span{
+          font-size:28px;
+          line-height:normal;
+          position:relative;
+          top:7px;
+          .f-orange;
+        }
       }
     }
     .quant-tool{
@@ -169,6 +190,43 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
         .f-green;
       }
     }
+  }
+  /* breadcrump */
+  .breadcrump{
+    .block;
+    .over-hidden;
+    li{
+      font-size:14px;
+      padding-right:2px;
+      float:left;
+      .f-gray-2;
+      .t-italic;
+      a{
+        .f-gray-2;
+        &:hover{
+          .f-orange;
+        }
+      }
+      &:after{
+        content:">";
+        padding-left:2px;
+      }
+      &:last-child{
+        &:after{
+          content:"";
+          padding-right:0;
+        }
+      }
+    }
+  }
+  /* bg-warning */
+  .bg-warning{
+    font-size:14px;
+    line-height:20px;
+    padding:8px 28px;
+    .t-center;
+    .radius2;
+    .bg-beige;
   }
 /* =============================================================================
    Header
@@ -378,6 +436,13 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
         font-size:14px;
         .f-black;
       }
+      &.product{
+        h2{
+          font-size:25px;
+          .f-default;
+          .t-bold;
+        }
+      }
     }
     .line{
       width:44%;
@@ -543,6 +608,20 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
            .no-transition;
           }
         }
+      }
+    }
+   }
+   /* wrap-img-prod */
+   #wrap-img-prod{
+    figure{
+      width:inherit;
+      height:inherit;
+      display:table-cell;
+      vertical-align:middle;
+      .t-center;
+      img{
+        max-width:100%;
+        max-height:100%;
       }
     }
    }
