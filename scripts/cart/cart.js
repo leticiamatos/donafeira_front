@@ -132,8 +132,10 @@ ApplicationCart = {
 
   valProductsBoxInt: function(){
     // add value
-    var valueLi = $(".value-prod-promo span").html(),
-        valueLiSp = valueLi.replace(/,/gi, ".");
+    if($(".value-prod-promo span").length > 0){
+        var valueLi = $(".value-prod-promo span").html(),
+            valueLiSp = valueLi.replace(/,/gi, ".");
+    }
 
     $(".cart-add-box.cont").find(".more").on("click", function(){
     // raise the price
