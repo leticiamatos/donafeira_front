@@ -34,6 +34,7 @@
                   </figure>
                   <span>Aliquam ac sem</span>
                   <strong>R$<span class="price-prod">3,90</span> / kg</strong>
+                  <a href="interna-produtos.php">sobre o produto</a>
                 </li>
                 <li class="col-xs-6 col-md-3 m-bottom-mini">
                   <figure>
@@ -41,6 +42,7 @@
                   </figure>
                   <span>Aliquam ac sem</span>
                   <strong>R$<span class="price-prod">2,05</span> / kg</strong>
+                  <a href="interna-produtos.php">sobre o produto</a>
                 </li>
                 <li class="col-xs-6 col-md-3 m-bottom-mini">
                   <figure>
@@ -48,6 +50,7 @@
                   </figure>
                   <span>Aliquam ac sem</span>
                   <strong>R$<span class="price-prod">3,75</span> / kg</strong>
+                  <a href="interna-produtos.php">sobre o produto</a>
                 </li>
                 <li class="col-xs-6 col-md-3 m-bottom-mini">
                   <figure>
@@ -55,6 +58,7 @@
                   </figure>
                   <span>Aliquam ac sem</span>
                   <strong>R$<span class="price-prod">4,50</span> / kg</strong>
+                  <a href="interna-produtos.php">sobre o produto</a>
                 </li>
                 <li class="col-xs-6 col-md-3 m-bottom-mini">
                   <figure>
@@ -62,6 +66,7 @@
                   </figure>
                   <span>Aliquam ac sem</span>
                   <strong>R$<span class="price-prod">0,23</span> / kg</strong>
+                  <a href="interna-produtos.php">sobre o produto</a>
                 </li>
             </ul>
         </div>

@@ -126,7 +126,11 @@ ApplicationCart = {
             valRound = parseFloat(mult).toFixed(2),
             valFinal = valRound.replace(".", ",");
 
-        $(".cart-add-box.float").find(".value-prod span").text(valFinal);
+        if(valueQuant == 0 || valueQuant == ""){
+            $(".cart-add-box.float").find(".quant-prod").val(1);
+        }else{
+            $(".cart-add-box.float").find(".value-prod span").text(valFinal);
+        }
     });
 
   },
@@ -176,7 +180,12 @@ ApplicationCart = {
             valRound = parseFloat(mult).toFixed(2),
             valFinal = valRound.replace(".", ",");
 
-        $(".cart-add-box.cont").find(".value-prod-promo span").text(valFinal);
+        if(valueQuant == 0 || valueQuant == ""){
+            $(".cart-add-box.cont").find(".quant-prod").val(1);
+        }else{
+            $(".cart-add-box.cont").find(".value-prod-promo span").text(valFinal);
+        }
+
     });
 
   },
