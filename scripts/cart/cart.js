@@ -184,12 +184,30 @@ ApplicationCart = {
   valProductsBoxKit: function(){
     // add value in parent
     $("table").find(".value-prod span").each(function(){
-        var self = $(this);
+        var self = $(this),
+            selfValue = self.html();
 
         self.parent().attr({
-            "data-valuethis": self.html()
+            "data-valuethis": selfValue
         });
+
     });
+    function valueReal(){
+        var somaValue = 0;
+        $("table").find(".value-prod span").each(function(){
+            var self = $(this),
+                selfValue = self.html(),
+                selfValueSp = selfValue.replace(/,/gi, ".");
+
+            somaValue += parseFloat(selfValueSp);
+            var selfValueRound = somaValue.toFixed(2),
+                selfValueFinal = selfValueRound.replace(".", ",");
+
+            $("#wrap-value-kit").find(".value-prod-promo span").html(selfValueFinal);
+        });
+    }
+    valueReal();
+
     $("table").find(".more").on("click", function(){
     // raise the price
         var self = $(this),
@@ -202,8 +220,10 @@ ApplicationCart = {
             valRound = parseFloat(mult).toFixed(2),
             valFinal = valRound.replace(".", ",");
 
+
         self.parent().parent().parent().find(".quant-prod").val(quant);
         self.parent().parent().parent().find(".value-prod span").text(valFinal);
+        valueReal();
     });
 
     // remove value
@@ -222,7 +242,8 @@ ApplicationCart = {
             self.parent().parent().parent().find(".quant-prod").val(1);
         }else{
             self.parent().parent().parent().find(".quant-prod").val(quant);
-        self.parent().parent().parent().find(".value-prod span").text(valFinal);
+            self.parent().parent().parent().find(".value-prod span").text(valFinal);
+            valueReal();
         }
     });
 
@@ -237,7 +258,13 @@ ApplicationCart = {
             valRound = parseFloat(mult).toFixed(2),
             valFinal = valRound.replace(".", ",");
 
-        self.parent().parent().parent().parent().find(".value-prod span").text(valFinal);
+        if(valueQuant == "" || valueQuant == 0){
+            self.parent().parent().parent().find(".quant-prod").val(1);
+        }else{
+            self.parent().parent().parent().parent().find(".value-prod span").text(valFinal);
+            valueReal();
+        }
+
     });
 
   }

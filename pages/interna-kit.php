@@ -70,7 +70,7 @@
               </div>
             </td>
             <td class="t-center">
-              <span class="value-prod">R$<span>5,00</span></span>
+              <span class="value-prod">R$<span>1,00</span></span>
             </td>
           </tr>
           <tr>
@@ -84,7 +84,7 @@
               </div>
             </td>
             <td class="t-center">
-              <span class="value-prod">R$<span>5,50</span></span>
+              <span class="value-prod">R$<span>1,00</span></span>
             </td>
           </tr>
           <tr>
@@ -98,13 +98,13 @@
               </div>
             </td>
             <td class="t-center">
-              <span class="value-prod">R$<span>3,00</span></span>
+              <span class="value-prod">R$<span>1,00</span></span>
             </td>
           </tr>
          </table>
          <div id="wrap-value-kit">
-            <span class="value-prod t-line">R$<span class="t-line">5,00</span></span>
-            <span class="value-prod-promo">R$<span>2,50</span></span>
+            <span class="value-prod-desc t-line">R$<span class="t-line">5,00</span></span>
+            <span class="value-prod-promo">R$<span>...</span></span>
          </div>
          <div id="wrap-bt-cart-kit">
           <a href="#" class="add-cart-bt f-white radius2">adicionar<br />ao carrinho</a>
