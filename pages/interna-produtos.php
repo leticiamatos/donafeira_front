@@ -42,7 +42,7 @@
         <a href="#" class="add-cart-bt f-white box-shadow radius2">adicionar<br />ao carrinho</a>
   <!--       <span class="add-cart-bt f-white box-shadow radius2 active">item já<br />adicionado</span> -->
       </div>
-      <p class="bg-warning">O ítem Apple pie tiramisu dragée cookie pudding deve conter mais que nng.</p>
+      <p class="bg-warning t-center">O ítem Apple pie tiramisu dragée cookie pudding deve conter mais que nng.</p>
     </div>
   </div>
 </div>

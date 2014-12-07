@@ -40,8 +40,7 @@
       </ul>
     </div>
     <div class="col-md-8">
-
-         <table class="table table-striped b-bottom-black-doble">
+       <table class="table table-striped b-bottom-black-doble">
           <tr>
             <td>ítens</td>
             <td class="t-center">quantidade</td>
@@ -58,7 +57,7 @@
               </div>
             </td>
             <td class="t-center">
-              <span class="value-prod">R$<span>10,00</span></span>
+              <span class="value-prod">R$<span>1,00</span></span>
             </td>
           </tr>
           <tr>
@@ -71,7 +70,7 @@
               </div>
             </td>
             <td class="t-center">
-              <span class="value-prod">R$<span>10,00</span></span>
+              <span class="value-prod">R$<span>5,00</span></span>
             </td>
           </tr>
           <tr>
@@ -85,7 +84,21 @@
               </div>
             </td>
             <td class="t-center">
-              <span class="value-prod">R$<span>10,00</span></span>
+              <span class="value-prod">R$<span>5,50</span></span>
+            </td>
+          </tr>
+          <tr>
+            <td>Nome do primeiro ítem do kit</td>
+            <td class="t-center">
+              <div class="quant-tool no-margin">
+                <div class="col-xs-3 more bg-orange">+</div><!--
+                --><div class="col-xs-3 quant-input"><input type="text" value="1" class="quant-prod b-black"></div><!--
+                --><div class="col-xs-3 type bg-gray">kg</div><!--
+                --><div class="col-xs-3 less bg-orange">-</div>
+              </div>
+            </td>
+            <td class="t-center">
+              <span class="value-prod">R$<span>3,00</span></span>
             </td>
           </tr>
          </table>
@@ -96,7 +109,7 @@
          <div id="wrap-bt-cart-kit">
           <a href="#" class="add-cart-bt f-white radius2">adicionar<br />ao carrinho</a>
           <!--<span class="add-cart-bt f-white box-shadow radius2 active">item já<br />adicionado</span> -->
-          <p class="bg-warning">O ítem Apple pie tiramisu dragée cookie pudding deve conter mais que nng.</p>
+          <p class="bg-warning t-right">O ítem Apple pie tiramisu dragée cookie pudding deve conter mais que nng.</p>
          </div>
     </div>
   </div>

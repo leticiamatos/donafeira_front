@@ -4,6 +4,7 @@ ApplicationCart = {
     this.boxCartShow();
     this.valProductsBox();
     this.valProductsBoxInt();
+    this.valProductsBoxKit();
   },
 
   cart: function(){
@@ -176,6 +177,67 @@ ApplicationCart = {
             valFinal = valRound.replace(".", ",");
 
         $(".cart-add-box.cont").find(".value-prod-promo span").text(valFinal);
+    });
+
+  },
+
+  valProductsBoxKit: function(){
+    // add value in parent
+    $("table").find(".value-prod span").each(function(){
+        var self = $(this);
+
+        self.parent().attr({
+            "data-valuethis": self.html()
+        });
+    });
+    $("table").find(".more").on("click", function(){
+    // raise the price
+        var self = $(this),
+            valueQuant = self.parent().parent().parent().find(".quant-prod").val(),
+            quant = ++valueQuant,
+            valueQuantAl = valueQuant,
+            valueLi = self.parent().parent().parent().find(".value-prod").data("valuethis"),
+            valueLiSp = valueLi.replace(/,/gi, "."),
+            mult = valueLiSp * valueQuantAl,
+            valRound = parseFloat(mult).toFixed(2),
+            valFinal = valRound.replace(".", ",");
+
+        self.parent().parent().parent().find(".quant-prod").val(quant);
+        self.parent().parent().parent().find(".value-prod span").text(valFinal);
+    });
+
+    // remove value
+    $("table").find(".less").on("click", function(){
+        var self = $(this),
+            valueQuant = self.parent().parent().parent().find(".quant-prod").val(),
+            quant = --valueQuant,
+            valueQuantAl = valueQuant,
+            valueLi = self.parent().parent().parent().find(".value-prod").data("valuethis"),
+            valueLiSp = valueLi.replace(/,/gi, "."),
+            mult = valueLiSp * valueQuantAl,
+            valRound = parseFloat(mult).toFixed(2),
+            valFinal = valRound.replace(".", ",");
+
+        if(quant === 0){
+            self.parent().parent().parent().find(".quant-prod").val(1);
+        }else{
+            self.parent().parent().parent().find(".quant-prod").val(quant);
+        self.parent().parent().parent().find(".value-prod span").text(valFinal);
+        }
+    });
+
+    // change value
+    $("table").find(".quant-prod").on("change", function(){
+        var self = $(this),
+            valueQuant = self.val(),
+            valueQuantAl = valueQuant,
+            valueLi = self.parent().parent().parent().parent().find(".value-prod").data("valuethis"),
+            valueLiSp = valueLi.replace(/,/gi, "."),
+            mult = valueLiSp * valueQuantAl,
+            valRound = parseFloat(mult).toFixed(2),
+            valFinal = valRound.replace(".", ",");
+
+        self.parent().parent().parent().parent().find(".value-prod span").text(valFinal);
     });
 
   }
