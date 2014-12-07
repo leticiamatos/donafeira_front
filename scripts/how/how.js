@@ -28,23 +28,10 @@ ApplicationHow = {
         $("#how-box").find("h3").text(selfTitle);
         $("#how-box").find("p").text(selfDesc);
         //position
-        if(selfAlign == "right"){
-            $("#wrap-how-box").css({
-                top: elemPoint.offset().top + elemPoint.height() + "px",
-                right: "10px"
-            });
-        }else if(selfAlign == "left"){
-            $("#wrap-how-box").css({
-                top: elemPoint.offset().top + elemPoint.height() + "px",
-                right: "66%"
-            });
-        }
-        else{
-            $("#wrap-how-box").css({
-                top: centerY + (elemPoint.height() / 2) + "px",
-                right: centerX - ($("#wrap-how-box").width() / 2)  + "px"
-            });
-        }
+        $("#wrap-how-box").css({
+            top: centerY + (elemPoint.height() / 2) + "px",
+            left: centerX - ($("#wrap-how-box").width() / 2)  + "px"
+        });
 
         // show
         $("#wrap-how-box").stop(false,true).fadeIn(300);

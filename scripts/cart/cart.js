@@ -15,12 +15,12 @@ ApplicationCart = {
             $("#wrap-itens-cart").animate({
                 opacity: '0'
             },200).css({
-                bottom: "400px"
+                top: "-400px"
             });
         }else{
             $("#cart").addClass('active');
             $("#wrap-itens-cart").css({
-                bottom: "-" + ($("#header").outerHeight() - 75) + "px"
+                top: ($("#header").outerHeight() - 70) + "px"
             }).animate({
                 opacity: '1'
             },400);

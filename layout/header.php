@@ -67,7 +67,7 @@
         </div>
         <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
         <a href="#" class="jcarousel-control-next">&rsaquo;</a>
-        <p class="jcarousel-pagination"></p>
+        <div class="jcarousel-pagination"></div>
     </div>
     <!-- carousel -->
   </div>
