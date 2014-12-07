@@ -175,9 +175,6 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
     padding-top:30px;
     position:relative;
     z-index:25;
-    div{
-      position:relative;
-    }
     #logo{
       position:absolute;
       top:29px;
@@ -472,7 +469,6 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
    /* wrap-how-box */
    #wrap-how-box{
     width:448px;
-    max-width:100%;
     display:none;
     position:absolute;
     z-index:99;
@@ -483,6 +479,7 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       border-right: 22px solid transparent;
       border-bottom: 22px solid @green;
       position:relative;
+      left:50%;
       .block;
     }
     #how-box{
@@ -494,6 +491,16 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       position:relative;
       overflow:hidden;
       .radius2;
+      #close-how{
+        font-size:22px;
+        position:absolute;
+        top:0px;
+        right:5px;
+        line-height:normal;
+        cursor:pointer;
+        .f-white;
+        .block;
+      }
       h3{
         text-transform:lowercase;
         font-size:30px;
@@ -513,7 +520,7 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
         opacity:0.8;
         .f-black;
         .t-center;
-        &.next{
+        &.prev{
           background-position:0 0;
           .no-transition;
           &:hover{
@@ -522,7 +529,7 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
            .no-transition;
           }
         }
-        &.prev{
+        &.next{
           background-position:-90px 0;
           .no-transition;
           left:62%;
