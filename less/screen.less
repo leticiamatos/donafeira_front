@@ -183,6 +183,16 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       .t-italic;
     }
   }
+  .finish-cart{
+    font-size:16px;
+    background:@green url(../images/content/continue.png) no-repeat 90% 50%;
+    display:block;
+    padding:18px 60px 18px 18px;
+    line-height:18px;
+    &:hover{
+      background-color:@orange;
+    }
+  }
   /* Styled scrollbars */
   .iScrollHorizontalScrollbar {
     position: absolute;
@@ -724,7 +734,7 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
     .m-bottom;
     .t-right;
     span{
-      .block;
+      display:block;
       span{
         display:inline!important;
       }
@@ -740,6 +750,22 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
         .f-orange;
       }
     }
+    &.bt-total{
+      width:225px;
+      padding:15px 0;
+      float:right;
+      .bg-blue;
+      .radius2;
+      span{
+        font-size:18px;
+        display:inline-block!important;
+        top:0;
+        .f-black;
+        &:first-child{
+          padding-right:43px;
+        }
+      }
+    }
    }
    /* wrap-bt-cart-kit */
    #wrap-bt-cart-kit{
@@ -752,6 +778,15 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
     }
     .add-cart-bt{
       width:153px;
+      float:right;
+    }
+   }
+   /* wrap-bt-finish-cart */
+   #wrap-bt-finish-cart{
+    width:100%;
+    .over-hidden;
+    .finish-cart{
+      width:225px;
       float:right;
     }
    }

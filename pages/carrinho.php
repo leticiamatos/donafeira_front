@@ -31,7 +31,7 @@
             <th width="20%" class="t-center">subtotal</th>
           </tr>
          </table>
-         <table class="table cart-page">
+         <table class="table cart-page products">
           <tr class="no-bg-li">
             <td width="20%">
               <div id="wrap-flag-cart">
@@ -88,7 +88,7 @@
             </td>
           </tr>
          </table>
-         <table class="table cart-page">
+         <table class="table cart-page products">
           <tr>
             <td width="20%">
               <div id="wrap-flag-cart">
@@ -121,14 +121,12 @@
           </tr>
          </table>
         </div>
-        <div id="wrap-value-kit">
-          <span class="value-prod-desc t-line">R$<span class="t-line">5,00</span></span>
-          <span class="value-prod-promo">R$<span>...</span></span>
+        <div id="wrap-value-kit" class="bt-total">
+          <span>total</span>
+          <span class="value-prod-promo">R$ <span>...</span></span>
         </div>
-        <div id="wrap-bt-cart-kit">
-          <a href="#" class="add-cart-bt f-white radius2">adicionar<br />ao carrinho</a>
-          <!--<span class="add-cart-bt f-white box-shadow radius2 active">item já<br />adicionado</span> -->
-          <p class="bg-warning t-right">O ítem Apple pie tiramisu dragée cookie pudding deve conter mais que nng.</p>
+        <div id="wrap-bt-finish-cart">
+          <a href="#" class="finish-cart f-white radius2">finalizar compra</a>
         </div>
     </div>
   </div>

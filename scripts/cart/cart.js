@@ -247,13 +247,29 @@ ApplicationCart = {
             valRound = parseFloat(mult).toFixed(2),
             valFinal = valRound.replace(".", ",");
 
-        if(quant === 0){
-            self.parent().parent().parent().find(".quant-prod").val(1);
+        // verification is page cart-page
+        if($(".cart-page").length > 0){
+            if(valueQuant == 0){
+                self.parent().parent().parent().fadeOut(300, function(){
+                    self.parent().parent().parent().remove();
+                    valueReal();
+                });
+            }else{
+                self.parent().parent().parent().find(".quant-prod").val(quant);
+                self.parent().parent().parent().find(".value-prod span").text(valFinal);
+                valueReal();
+            }
         }else{
-            self.parent().parent().parent().find(".quant-prod").val(quant);
-            self.parent().parent().parent().find(".value-prod span").text(valFinal);
-            valueReal();
+            if(quant === 0){
+                self.parent().parent().parent().find(".quant-prod").val(1);
+            }else{
+                self.parent().parent().parent().find(".quant-prod").val(quant);
+                self.parent().parent().parent().find(".value-prod span").text(valFinal);
+                valueReal();
+            }
         }
+
+
     });
 
     // change value
@@ -267,11 +283,21 @@ ApplicationCart = {
             valRound = parseFloat(mult).toFixed(2),
             valFinal = valRound.replace(".", ",");
 
-        if(valueQuant == "" || valueQuant == 0){
-            self.parent().parent().parent().find(".quant-prod").val(1);
+        // verification is page cart-page
+        if($(".cart-page").length > 0){
+            if(valueQuant == "" || valueQuant == 0){
+                self.parent().parent().parent().parent().fadeOut(300, function(){
+                    self.parent().parent().parent().parent().remove();
+                    valueReal();
+                });
+            }
         }else{
-            self.parent().parent().parent().parent().find(".value-prod span").text(valFinal);
-            valueReal();
+            if(valueQuant == "" || valueQuant == 0){
+                self.parent().parent().parent().find(".quant-prod").val(1);
+            }else{
+                self.parent().parent().parent().parent().find(".value-prod span").text(valFinal);
+                valueReal();
+            }
         }
 
     });
