@@ -3,6 +3,7 @@ ApplicationCart = {
     this.cart();
     this.boxCartShow();
     this.valProductsBox();
+    this.valProductsBoxInt();
   },
 
   cart: function(){
@@ -125,6 +126,54 @@ ApplicationCart = {
             valFinal = valRound.replace(".", ",");
 
         $(".cart-add-box.float").find(".value-prod span").text(valFinal);
+    });
+
+  },
+
+  valProductsBoxInt: function(){
+    // add value
+    var valueLi = $(".value-prod-promo span").html(),
+        valueLiSp = valueLi.replace(/,/gi, ".");
+
+    $(".cart-add-box.cont").find(".more").on("click", function(){
+    // raise the price
+        var valueQuant = $(".cart-add-box.cont").find(".quant-prod").val(),
+            quant = ++valueQuant,
+            valueQuantAl = valueQuant,
+            mult = valueLiSp * valueQuantAl,
+            valRound = parseFloat(mult).toFixed(2),
+            valFinal = valRound.replace(".", ",");
+        $(".cart-add-box.cont").find(".quant-prod").val(quant);
+        $(".cart-add-box.cont").find(".value-prod-promo span").text(valFinal);
+    });
+
+    // remove value
+    $(".cart-add-box.cont").find(".less").on("click", function(){
+        var valueQuant = $(".cart-add-box.cont").find(".quant-prod").val(),
+            quant = --valueQuant,
+            valueQuantAl = valueQuant,
+            mult = valueLiSp * valueQuantAl,
+            valRound = parseFloat(mult).toFixed(2),
+            valFinal = valRound.replace(".", ",");
+
+        if(quant === 0){
+            $(".cart-add-box.cont").find(".quant-prod").val(1);
+        }else{
+            $(".cart-add-box.cont").find(".quant-prod").val(quant);
+            $(".cart-add-box.cont").find(".value-prod-promo span").text(valFinal);
+        }
+    });
+
+    // change value
+    $(".cart-add-box.cont").find(".quant-prod").on("change", function(){
+        var valueQuant = $(".cart-add-box.cont").find(".quant-prod").val(),
+            valueQuantAl = valueQuant,
+            valueLi = $(".value-prod-promo span").html(),
+            mult = valueLiSp * valueQuantAl,
+            valRound = parseFloat(mult).toFixed(2),
+            valFinal = valRound.replace(".", ",");
+
+        $(".cart-add-box.cont").find(".value-prod-promo span").text(valFinal);
     });
 
   }

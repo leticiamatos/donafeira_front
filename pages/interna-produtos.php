@@ -36,8 +36,8 @@
           --><div class="col-xs-3 quant-input"><input type="text" value="1" class="quant-prod"></div><!--
           --><div class="col-xs-3 less bg-orange">-</div>
           </div>
-          <span class="value-prod t-line">R$<span class="t-line">88,88</span></span>
-          <span class="value-prod-promo">R$<span>88,88</span></span>
+          <span class="value-prod t-line">R$<span class="t-line">5,00</span></span>
+          <span class="value-prod-promo">R$<span>2,50</span></span>
         </div>
         <a href="#" class="add-cart-bt f-white box-shadow radius2">adicionar<br />ao carrinho</a>
   <!--       <span class="add-cart-bt f-white box-shadow radius2 active">item já<br />adicionado</span> -->
