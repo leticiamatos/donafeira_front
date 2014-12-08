@@ -126,7 +126,7 @@
           <span class="value-prod-promo">R$ <span>...</span></span>
         </div>
         <div id="wrap-bt-finish-cart">
-          <a href="#" class="finish-cart f-white radius2">finalizar compra</a>
+          <a href="#" class="finish-cart f-white radius2">itens do pedido</a>
         </div>
     </div>
   </div>
