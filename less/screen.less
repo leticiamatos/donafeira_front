@@ -276,6 +276,69 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
     .radius2;
     .bg-beige;
   }
+  /* border-vert */
+  .border-vert{
+    background:url(../images/content/line_dashed_vert.png) repeat-y top right;
+  }
+  /* form */
+  form{
+    div{
+      position:relative;
+    }
+    label{
+      font-size:14px;
+      margin-bottom:10px;
+      .block;
+      .f-black;
+    }
+    input[type=text],input[type=password],input[type=email], textarea{
+      .bg-gray-3;
+      .no-radius;
+      &:focus{
+        border-color:@gray;
+        box-shadow:0px 0px 10px rgba(140,35,0,0.5);
+        -moz-box-shadow:0px 0px 10px rgba(140,35,0,0.5);
+        -webkit-box-shadow:0px 0px 10px rgba(140,35,0,0.5);
+        -o-box-shadow:0px 0px 10px rgba(140,35,0,0.5);
+        -ms-box-shadow:0px 0px 10px rgba(140,35,0,0.5);
+      }
+    }
+    input[type=submit], button[type=submit]{
+      font-size:17px;
+      width:119px;
+      height:48px;
+      display:block;
+      clear:both;
+      .f-white;
+      .bg-green;
+      .no-border;
+      .radius2;
+      .transition;
+      &:hover{
+        .bg-orange;
+        .transition;
+      }
+    }
+    a{
+      .f-blue-3;
+      &:hover{
+        .f-orange;
+      }
+    }
+    .error{
+      font-size:14px;
+      line-height:20px;
+      padding:8px 28px;
+      position:absolute;
+      top:0;
+      right:0;
+      .radius2;
+      .bg-beige;
+      &.valid{
+        background:#DFF0D8!important;
+      }
+    }
+  }
 /* =============================================================================
    Header
    ========================================================================== */
