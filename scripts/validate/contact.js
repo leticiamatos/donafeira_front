@@ -2,6 +2,7 @@ var Contact = {
   init: function () {
     this.login();
     this.cadastre();
+    this.contact();
   },
 
   login: function () {
@@ -59,6 +60,20 @@ var Contact = {
           required: true
         },
         "cadastre-state": {
+          required: true
+        }
+      }
+    });
+  },
+
+  contact: function () {
+    $("#form-contact").validate({
+      rules: {
+        "contact-mail": {
+          required: true,
+          email: true
+        },
+        "contact-message": {
           required: true
         }
       }
