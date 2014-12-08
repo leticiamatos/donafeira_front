@@ -25,7 +25,7 @@
             </div>
             <div class="col-md-12">
               <div id="wrap-bt-order">
-                <a href="#" class="bt-order f-white radius2">finalizar compra</a>
+                <a href="historico-pedidos.php" class="bt-order f-white radius2">itens do pedido</a>
               </div>
             </div>
           </div><!-- wrap-order -->
@@ -44,7 +44,7 @@
             </div>
             <div class="col-md-12">
               <div id="wrap-bt-order">
-                <a href="#" class="bt-order f-white radius2">finalizar compra</a>
+                <a href="historico-pedidos.php" class="bt-order f-white radius2">itens do pedido</a>
               </div>
             </div>
           </div><!-- wrap-order -->
@@ -66,37 +66,37 @@
             <tr>
               <td width="50%">Segunda-feira  19/11/2014-10h20</td>
               <td width="20%">R$ 200,00</td>
-              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+              <td width="30%"><a href="historico-pedidos.php" class="bt-order padding-mini f-white radius2">itens do pedido</a></td>
             </tr>
             <tr>
               <td width="50%">Segunda-feira  19/11/2014-10h20</td>
               <td width="20%">R$ 200,00</td>
-              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+              <td width="30%"><a href="historico-pedidos.php" class="bt-order padding-mini f-white radius2">itens do pedido</a></td>
             </tr>
             <tr>
               <td width="50%">Segunda-feira  19/11/2014-10h20</td>
               <td width="20%">R$ 200,00</td>
-              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+              <td width="30%"><a href="historico-pedidos.php" class="bt-order padding-mini f-white radius2">itens do pedido</a></td>
             </tr>
             <tr>
               <td width="50%">Segunda-feira  19/11/2014-10h20</td>
               <td width="20%">R$ 200,00</td>
-              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+              <td width="30%"><a href="historico-pedidos.php" class="bt-order padding-mini f-white radius2">itens do pedido</a></td>
             </tr>
             <tr>
               <td width="50%">Segunda-feira  19/11/2014-10h20</td>
               <td width="20%">R$ 200,00</td>
-              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+              <td width="30%"><a href="historico-pedidos.php" class="bt-order padding-mini f-white radius2">itens do pedido</a></td>
             </tr>
             <tr>
               <td width="50%">Segunda-feira  19/11/2014-10h20</td>
               <td width="20%">R$ 200,00</td>
-              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+              <td width="30%"><a href="historico-pedidos.php" class="bt-order padding-mini f-white radius2">itens do pedido</a></td>
             </tr>
             <tr>
               <td width="50%">Segunda-feira  19/11/2014-10h20</td>
               <td width="20%">R$ 200,00</td>
-              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+              <td width="30%"><a href="historico-pedidos.php" class="bt-order padding-mini f-white radius2">itens do pedido</a></td>
             </tr>
           </table>
         </div>
