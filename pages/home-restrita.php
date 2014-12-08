@@ -2,7 +2,7 @@
 <div class="wrap-full bg-white b-top-gray m-bottom-micro pad-bottom pad-top over-hidden">
   <div class="container">
     <div id="wrap-bt-back" class="col-md-12">
-      <a href="index.php">Retornar à<br />Página Inicial</a>
+      <a href="index.php" class="t-center">Retornar à<br />Página Inicial</a>
     </div>
     <div class="col-md-6">
       <div class="bg-blue radius">
@@ -56,8 +56,49 @@
         <div class="wrap-title-box border-horiz">
           <h2 class="clock">Histórico de<br/>Pedidos</h2>
         </div>
-        <div class="wrap-padding">
-asdas
+        <div id="wrap-table-orders" class="wrap-padding">
+          <table>
+            <tr>
+              <th width="50%">Data do pedido</th>
+              <th width="20%">Total</th>
+              <th width="30%">&nbsp;</th>
+            </tr>
+            <tr>
+              <td width="50%">Segunda-feira  19/11/2014-10h20</td>
+              <td width="20%">R$ 200,00</td>
+              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+            </tr>
+            <tr>
+              <td width="50%">Segunda-feira  19/11/2014-10h20</td>
+              <td width="20%">R$ 200,00</td>
+              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+            </tr>
+            <tr>
+              <td width="50%">Segunda-feira  19/11/2014-10h20</td>
+              <td width="20%">R$ 200,00</td>
+              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+            </tr>
+            <tr>
+              <td width="50%">Segunda-feira  19/11/2014-10h20</td>
+              <td width="20%">R$ 200,00</td>
+              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+            </tr>
+            <tr>
+              <td width="50%">Segunda-feira  19/11/2014-10h20</td>
+              <td width="20%">R$ 200,00</td>
+              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+            </tr>
+            <tr>
+              <td width="50%">Segunda-feira  19/11/2014-10h20</td>
+              <td width="20%">R$ 200,00</td>
+              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+            </tr>
+            <tr>
+              <td width="50%">Segunda-feira  19/11/2014-10h20</td>
+              <td width="20%">R$ 200,00</td>
+              <td width="30%"><a href="#" class="bt-order padding-mini f-white radius2">finalizar compra</a></td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
