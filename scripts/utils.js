@@ -2,6 +2,7 @@ Application = {
   init: function () {
     this.menuPosition();
     this.sizeCatList();
+    this.btCadastre();
   },
   menuPosition: function(){
     function sizeMenu(){
@@ -32,6 +33,17 @@ Application = {
 
     $("#cat-list").css({
       width: (catsWidth*catsLength + (catsMargin*catsLength)) + "px"
+    });
+  },
+
+  btCadastre: function(){
+    $(".bt-cadastre").on("click", function(){
+      $("#wrap-cadastre").stop(false,true).fadeIn(600);
+      $("html,body").animate({
+        scrollTop: $("#wrap-cadastre").offset().top + "px"
+      },700);
+
+      return false;
     });
   }
 

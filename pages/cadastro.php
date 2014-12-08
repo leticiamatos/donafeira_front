@@ -18,8 +18,12 @@
         <div class="titles">
           <h2>Cadastre-se!</h2>
         </div>
-        <!-- login -->
-        <?php include "layout/forms/cadastre.php"; ?>
+        <p class="min-width-70 m-bottom-micro">In porttitor dolor non purus lobortis, ut tincidunt lacus rutrum. Nullam sapien justo, rhoncus eu eros id, auctor iaculis elit. </p>
+        <a href="#" class="bt-green bt-cadastre">cadastre-se</a>
+        <div id="wrap-cadastre">
+          <!-- cadastre -->
+          <?php include "layout/forms/cadastre.php"; ?>
+        </div>
       </div>
     </div>
   </div>
