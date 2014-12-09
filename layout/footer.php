@@ -1,6 +1,6 @@
   <footer id="footer">
     <section id="wrapFooter" class="container">
-        <div class="col-md-2">
+        <div class="col-md-2 t-center">
             <a href="#">
                 <img src="images/footer/dona_feira.png" alt="Dona Feira" />
             </a>
@@ -17,7 +17,7 @@
             <h5 class="t-center"><a href="mailto:contato@donafeira.com.br" class="f-green">contato@donafeira.com.br</a></h5>
             <h6 class="f-black t-center">SEG a SEX - 9h às 18h</h6>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 t-center">
             <img src="images/temporary/pay.png" alt="Fomas de pagamento" />
         </div>
     </section><!-- end wrapFooter -->

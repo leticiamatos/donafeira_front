@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=1040px, user-scalable=yes, initial-scale=0.5, maximum-scale=2, minimum-scale=0.2">
   <title>Dona Feira</title>
   <meta name="language" content="pt-br" />
   <meta name="resource-type" content="document" />
