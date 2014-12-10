@@ -35,9 +35,6 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
 /* =============================================================================
    Geral
    ========================================================================== */
-   .container{
-    width:1040px!important;
-   }
   /* wrap-full */
   .wrap-full{
     width:100%;
@@ -527,6 +524,20 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
 /* =============================================================================
    Container
    ========================================================================== */
+   /* main */
+   #main{
+    width:100%;
+    display:block;
+    position:relative;
+    left:0;
+    .jcarousel-wrapper, .jcarousel{
+      .no-border;
+      .no-padding;
+      .no-radius;
+      .no-shadow;
+    }
+   }
+   /* list-itens */
    .list-itens{
     li{
       min-height:280px;
