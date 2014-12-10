@@ -53,7 +53,7 @@
             <td width="20%" class="t-center">
               <div class="quant-tool no-margin">
                 <div class="col-xs-3 more bg-orange">+</div><!--
-                --><div class="col-xs-3 quant-input"><input type="text" value="1" class="quant-prod b-black"></div><!--
+                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-black"></div><!--
                 --><div class="col-xs-3 type bg-gray">kg</div><!--
                 --><div class="col-xs-3 less bg-orange">-</div>
               </div>
@@ -78,7 +78,7 @@
             <td width="20%" class="t-center">
               <div class="quant-tool no-margin">
                 <div class="col-xs-3 more bg-orange">+</div><!--
-                --><div class="col-xs-3 quant-input"><input type="text" value="1" class="quant-prod b-black"></div><!--
+                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-black"></div><!--
                 --><div class="col-xs-3 type bg-gray">kg</div><!--
                 --><div class="col-xs-3 less bg-orange">-</div>
               </div>
@@ -110,7 +110,7 @@
             <td width="20%" class="t-center">
               <div class="quant-tool no-margin">
                 <div class="col-xs-3 more bg-orange">+</div><!--
-                --><div class="col-xs-3 quant-input"><input type="text" value="1" class="quant-prod b-black"></div><!--
+                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-black"></div><!--
                 --><div class="col-xs-3 type bg-gray">kg</div><!--
                 --><div class="col-xs-3 less bg-orange">-</div>
               </div>

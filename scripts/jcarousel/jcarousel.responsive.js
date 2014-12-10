@@ -26,6 +26,13 @@
                 .jcarouselControl({
                     target: '-=1'
                 });
+                self.find('.jcarousel-control-prev, .jcarousel-control-next').bind({
+                    click: function(){
+                         $(".cart-add-box.float").css({
+                            display: "none"
+                        });
+                    }
+                });
 
                 self.find('.jcarousel-control-next')
                 .jcarouselControl({

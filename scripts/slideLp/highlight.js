@@ -1,5 +1,5 @@
 $(function(){
 	$("#highlight").slideLp({
-    adjustmentResponsiveHeight: 2.7,
+    adjustmentResponsiveHeight: 1.4,
   });
 });

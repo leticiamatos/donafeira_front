@@ -9,6 +9,22 @@ ApplicationCart = {
 
   cart: function(){
     // click cart icon
+    var topCartBox = 0;
+
+    function topBox(){
+        topCartBox = ($("#cart").position().top + ($("#wrap-itens-cart").outerHeight() / 2) - ($("#cart").outerHeight() / 2) / 4)
+    }
+    topBox();
+
+    $(window).bind({
+        load: function(){
+            topBox();
+        },
+        resize: function () {
+            topBox();
+        }
+    });
+
     $("#wrap-cart").on('click', function(){
         var self = $(this);
 
@@ -22,11 +38,20 @@ ApplicationCart = {
         }else{
             $("#cart").addClass('active');
             $("#wrap-itens-cart").css({
-                top: ($("#header").outerHeight() - 70) + "px"
+                top: topCartBox + "px"
             }).animate({
                 opacity: '1'
             },400);
         }
+    });
+
+    $("#main").mouseleave(function(){
+        $("#cart").removeClass('active');
+        $("#wrap-itens-cart").animate({
+            opacity: '0'
+        },200).css({
+            top: "-400px"
+        });
     });
 
   },
@@ -34,7 +59,7 @@ ApplicationCart = {
   boxCartShow: function(){
     // price box
     $(".list-itens li").bind({
-        mouseenter: function(){
+        click: function(){
             var self = $(this);
 
 
@@ -69,7 +94,7 @@ ApplicationCart = {
     // hover print value
     var valueLi;
     $(".list-itens li").bind({
-        mouseenter: function(){
+        click: function(){
             var self = $(this),
                 selfPrice = self.find(".price-prod").html();
 

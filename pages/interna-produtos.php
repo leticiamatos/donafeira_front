@@ -33,7 +33,7 @@
           <span class="m-bottom-micro">quantidade</span>
           <div class="quant-tool">
             <div class="col-xs-3 more bg-orange">+</div><!--
-          --><div class="col-xs-3 quant-input"><input type="text" value="1" class="quant-prod"></div><!--
+          --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod"></div><!--
           --><div class="col-xs-3 less bg-orange">-</div>
           </div>
           <span class="value-prod t-line">R$<span class="t-line">5,00</span></span>

@@ -586,28 +586,28 @@ if(options.fullScreen){
 
       fullscreen.css({
         width: Math.round((winWidth - imageRatio) + options.adjustmentSize),
-        height: winHeight
+        height: winHeight / options.adjustmentResponsiveHeight
         // height: Math.round((winWidth / imageRatio))
       });
       div.css({
         width: Math.round((winWidth - imageRatio) + options.adjustmentSize),
-        height: winHeight
+        height: winHeight / options.adjustmentResponsiveHeight
       });
       ul.css({
         width: Math.round((winWidth - imageRatio) * li.length) + options.adjustmentSize,
-        height: winHeight
+        height: winHeight / options.adjustmentResponsiveHeight
       });
       cont.css({
         width: Math.round((winWidth - imageRatio) + options.adjustmentSize),
-        height: winHeight
+        height: winHeight / options.adjustmentResponsiveHeight
       });
       li.css({
         width: Math.round((winWidth - imageRatio) + options.adjustmentSize),
-        height: winHeight
+        height: winHeight / options.adjustmentResponsiveHeight
       });
       image.css({
         width: "auto",
-        height: winHeight
+        height: winHeight / options.adjustmentResponsiveHeight
       });
     }
   }
