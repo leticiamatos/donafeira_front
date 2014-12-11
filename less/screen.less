@@ -374,6 +374,92 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       }
     }
   }
+  /* wrap-menu-responsivo */
+  #wrap-menu-responsivo{
+    position:absolute;
+    top:20px;
+    right:0;
+    z-index:30;
+    .button-menu{
+      font-size:18px;
+      display:inline-block;
+      padding:10px;
+      position:absolute;
+      top:0;
+      right:30px;
+      cursor:pointer;
+      .bg-orange;
+      .f-white;
+      .radius;
+    }
+    #nav-user-responsive{
+      width:98%;
+      height:100%;
+      padding:30px;
+      display:none;
+      position:fixed;
+      top:0%;
+      right:0%;
+      z-index:999;
+      .bg-white;
+      .box-shadow;
+      .over-hidden;
+      ul{
+        li{
+          border-bottom:1px dashed @gray;
+          a{
+            font-size:22px;
+            padding:8px 0;
+            .f-black;
+            .block;
+            &:before{
+              font-size:12px;
+              font-family: FontAwesome;
+              content: "\f0da";
+              padding-right:5px;
+              position:relative;
+              top:-3px;
+              .transition;
+            }
+            &:hover, &.active{
+              .f-orange;
+              &:before{
+                padding-right:15px;
+                .transition;
+              }
+            }
+          }
+        }
+        li:first-child a:before{
+          font-size:inherit;
+          content: "\f007";
+          font-family: FontAwesome;
+          top:0;
+        }
+        li:first-child{
+          padding-top:20px;
+          .m-bottom-micro;
+          .no-border;
+          a{
+            padding-top:0;
+            .f-orange;
+            .t-bold;
+          }
+        }
+      }
+      #close-menu{
+        font-size:32px;
+        display:inline-block;
+        position:absolute;
+        top:5px;
+        right:15px;
+        .f-green;
+        &:hover{
+          .f-red;
+        }
+      }
+    }
+  }
 /* =============================================================================
    Header
    ========================================================================== */

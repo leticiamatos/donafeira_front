@@ -1,4 +1,11 @@
-<div id="wrap-flag">
+<div id="wrap-menu-responsivo" class="hidden-sm hidden-md hidden-lg">
+  <i class="button-menu fa fa-bars"></i>
+  <nav id="nav-user-responsive" class="">
+    <a href="#" id="close-menu"><i class="fa fa-times-circle-o"></i></a>
+    <?php include "layout/menu.php"; ?>
+  </nav>
+</div>
+<div id="wrap-flag" class="hidden-xs">
   <img src="images/header/arrow-menu.png" class="arrow" />
   <nav id="nav-user" class="blue">
      <?php include "layout/menu.php"; ?>
