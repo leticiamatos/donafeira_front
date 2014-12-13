@@ -30,8 +30,7 @@
             <th width="20%" class="t-center">quantidade</th>
             <th width="20%" class="t-center">subtotal</th>
           </tr>
-         </table>
-         <table class="table cart-page products">
+
           <tr class="no-bg-li">
             <td width="20%">
               <div id="wrap-flag-cart">
@@ -53,7 +52,7 @@
             <td width="20%" class="t-center">
               <div class="quant-tool no-margin">
                 <div class="col-xs-3 more bg-orange">+</div><!--
-                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-black"></div><!--
+                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-gray"></div><!--
                 --><div class="col-xs-3 type bg-gray">kg</div><!--
                 --><div class="col-xs-3 less bg-orange">-</div>
               </div>
@@ -78,7 +77,7 @@
             <td width="20%" class="t-center">
               <div class="quant-tool no-margin">
                 <div class="col-xs-3 more bg-orange">+</div><!--
-                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-black"></div><!--
+                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-gray"></div><!--
                 --><div class="col-xs-3 type bg-gray">kg</div><!--
                 --><div class="col-xs-3 less bg-orange">-</div>
               </div>
@@ -87,8 +86,7 @@
               <span class="value-prod">R$<span>2,00</span></span>
             </td>
           </tr>
-         </table>
-         <table class="table cart-page products">
+
           <tr>
             <td width="20%">
               <div id="wrap-flag-cart">
@@ -110,7 +108,7 @@
             <td width="20%" class="t-center">
               <div class="quant-tool no-margin">
                 <div class="col-xs-3 more bg-orange">+</div><!--
-                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-black"></div><!--
+                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-gray"></div><!--
                 --><div class="col-xs-3 type bg-gray">kg</div><!--
                 --><div class="col-xs-3 less bg-orange">-</div>
               </div>

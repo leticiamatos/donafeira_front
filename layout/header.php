@@ -27,7 +27,7 @@
   </div>
   <div id="wrap-cart">
     <a href="#" id="cart">
-      <span id="value-cart" class="t-center block f-blue-2">R$ 120,48</span>
+      <span id="value-cart" class="t-center block f-blue-2">R$ <span>0,00</span></span>
     </a>
   </div>
   <div id="wrap-itens-cart" class="bg-white">
@@ -40,7 +40,7 @@
                     <img src="images/temporary/banana.png" alt="banana"/>
                   </figure>
                   <span>Aliquam ac sem</span>
-                  <strong>R$<span class="price-prod">3,90</span> / kg</strong>
+                  <strong>R$<span class="price-prod">1,00</span> / kg</strong>
                   <a href="interna-produtos.php">sobre o produto</a>
                 </li>
                 <li class="col-xs-6 col-md-3 m-bottom-mini">
@@ -48,7 +48,7 @@
                     <img src="images/temporary/manga.png" alt="banana"/>
                   </figure>
                   <span>Aliquam ac sem</span>
-                  <strong>R$<span class="price-prod">2,05</span> / kg</strong>
+                  <strong>R$<span class="price-prod">1,00</span> / kg</strong>
                   <a href="interna-produtos.php">sobre o produto</a>
                 </li>
                 <li class="col-xs-6 col-md-3 m-bottom-mini">
@@ -56,7 +56,7 @@
                     <img src="images/temporary/feijao.png" alt="banana"/>
                   </figure>
                   <span>Aliquam ac sem</span>
-                  <strong>R$<span class="price-prod">3,75</span> / kg</strong>
+                  <strong>R$<span class="price-prod">1,00</span> / kg</strong>
                   <a href="interna-produtos.php">sobre o produto</a>
                 </li>
                 <li class="col-xs-6 col-md-3 m-bottom-mini">
@@ -64,7 +64,7 @@
                     <img src="images/temporary/iogurte.png" alt="banana"/>
                   </figure>
                   <span>Aliquam ac sem</span>
-                  <strong>R$<span class="price-prod">4,50</span> / kg</strong>
+                  <strong>R$<span class="price-prod">1,00</span> / kg</strong>
                   <a href="interna-produtos.php">sobre o produto</a>
                 </li>
                 <li class="col-xs-6 col-md-3 m-bottom-mini">
@@ -72,7 +72,7 @@
                     <img src="images/temporary/feijao.png" alt="banana"/>
                   </figure>
                   <span>Aliquam ac sem</span>
-                  <strong>R$<span class="price-prod">0,23</span> / kg</strong>
+                  <strong>R$<span class="price-prod">1,00</span> / kg</strong>
                   <a href="interna-produtos.php">sobre o produto</a>
                 </li>
             </ul>

@@ -54,6 +54,22 @@ ApplicationCart = {
         });
     });
 
+    // value cart
+    // add value in parent
+    var somaValue = 0;
+    $("#wrap-itens-cart").find(".list-itens .price-prod").each(function(){
+        var self = $(this),
+            selfValue = self.html(),
+            selfValueSp = selfValue.replace(/,/gi, ".");
+
+        somaValue += parseFloat(selfValueSp);
+        var selfValueRound = somaValue.toFixed(2),
+            selfValueFinal = selfValueRound.replace(".", ",");
+
+        $("#cart").find("#value-cart span").html(selfValueFinal);
+
+    });
+
   },
 
   boxCartShow: function(){

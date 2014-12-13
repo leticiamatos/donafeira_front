@@ -17,22 +17,22 @@
     </div>
     <div id="wrap-img-prod" class="col-md-4">
       <ul>
-        <li class="col-md-6">
+        <li class="col-md-6 col-xs-6">
           <figure>
             <img src="images/temporary/banana.png" title="Feijão" />
           </figure>
         </li>
-        <li class="col-md-6">
+        <li class="col-md-6 col-xs-6">
           <figure>
             <img src="images/temporary/manga.png" title="Feijão" />
           </figure>
         </li>
-        <li class="col-md-6">
+        <li class="col-md-6 col-xs-6">
           <figure>
             <img src="images/temporary/feijao.png" title="Feijão" />
           </figure>
         </li>
-        <li class="col-md-6">
+        <li class="col-md-6 col-xs-6">
           <figure>
             <img src="images/temporary/iogurte.png" title="Feijão" />
           </figure>
@@ -51,7 +51,7 @@
             <td class="t-center">
               <div class="quant-tool no-margin">
                 <div class="col-xs-3 more bg-orange">+</div><!--
-                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-black"></div><!--
+                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-gray"></div><!--
                 --><div class="col-xs-3 type bg-gray">kg</div><!--
                 --><div class="col-xs-3 less bg-orange">-</div>
               </div>
@@ -65,7 +65,7 @@
             <td class="t-center">
               <div class="quant-tool no-margin">
                 <div class="col-xs-3 more bg-orange">+</div><!--
-                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-black"></div><!--
+                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-gray"></div><!--
                 --><div class="col-xs-3 less bg-orange">-</div>
               </div>
             </td>
@@ -78,7 +78,7 @@
             <td class="t-center">
               <div class="quant-tool no-margin">
                 <div class="col-xs-3 more bg-orange">+</div><!--
-                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-black"></div><!--
+                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-gray"></div><!--
                 --><div class="col-xs-3 type bg-gray">kg</div><!--
                 --><div class="col-xs-3 less bg-orange">-</div>
               </div>
@@ -92,7 +92,7 @@
             <td class="t-center">
               <div class="quant-tool no-margin">
                 <div class="col-xs-3 more bg-orange">+</div><!--
-                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-black"></div><!--
+                --><div class="col-xs-3 quant-input"><input type="number" value="1" class="quant-prod b-gray"></div><!--
                 --><div class="col-xs-3 type bg-gray">kg</div><!--
                 --><div class="col-xs-3 less bg-orange">-</div>
               </div>

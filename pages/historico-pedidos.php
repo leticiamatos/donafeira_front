@@ -14,15 +14,13 @@
     </div>
     <div class="col-md-12">
       <div class="table-responsive">
-        <table class="table history-page no-margin">
+         <table class="table cart-page products">
           <tr>
             <th width="30%">Segunda-feira  19/11/2014-10h20</th>
             <th width="40%">Produto</th>
             <th width="10%" class="t-center">quantidade</th>
             <th width="20%" class="t-center">subtotal</th>
           </tr>
-         </table>
-         <table class="table cart-page products">
           <tr class="no-bg-li">
             <td width="30%">
               <div id="wrap-flag-cart">
@@ -62,8 +60,6 @@
               <span class="value-prod">R$<span>2,00</span></span>
             </td>
           </tr>
-         </table>
-         <table class="table cart-page products">
           <tr>
             <td width="30%">
               <div id="wrap-flag-cart">
