@@ -16,7 +16,9 @@ ApplicationHow = {
             width = elemPoint.width(),
             height = elemPoint.height(),
             centerX = offset.left + width / 2,
-            centerY = offset.top + height / 2;
+            centerY = offset.top + height / 2,
+            topBox = centerY + (elemPoint.height() / 2);
+            leftBox = centerX - ($("#wrap-how-box").width() / 2);
 
         // active link
         $(".links-how a").removeClass("active");
@@ -28,13 +30,33 @@ ApplicationHow = {
         $("#how-box").find("h3").text(selfTitle);
         $("#how-box").find("p").text(selfDesc);
         //position
-        $("#wrap-how-box").css({
+        var widthPage = $(window).width();
+
+        if (widthPage >= 600) {
+          $("#wrap-how-box").css({
+            top: topBox + "px",
+            left: leftBox  + "px"
+          });
+        } else if (widthPage >= 320) {
+          $("#wrap-how-box").css({
+            width: "100%",
             top: centerY + (elemPoint.height() / 2) + "px",
-            left: centerX - ($("#wrap-how-box").width() / 2)  + "px"
-        });
+            left: "0%"
+          });
+        }
+
+        if($("#wrap-how-box").width() + leftBox > widthPage){
+          $("#wrap-how-box").css({
+            left: widthPage - $("#wrap-how-box").width() + "px"
+          });
+        }
+
 
         // show
         $("#wrap-how-box").stop(false,true).fadeIn(300);
+        $("html, body").animate({
+          scrollTop: $("#wrap-how-box").offset().top - 120 + "px"
+        },300);
 
         return false;
     });

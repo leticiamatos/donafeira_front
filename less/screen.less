@@ -381,7 +381,7 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
     right:0;
     z-index:30;
     .button-menu{
-      font-size:18px;
+      font-size:24px;
       display:inline-block;
       padding:10px;
       position:absolute;
@@ -393,17 +393,18 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       .radius;
     }
     #nav-user-responsive{
+      background:@white url(../images/header/bg_menu_responsivo.png) no-repeat 5% 95%;
       width:98%;
       height:100%;
       padding:30px;
-      display:none;
       position:fixed;
       top:0%;
-      right:0%;
+      right:-100%;
       z-index:999;
-      .bg-white;
+      overflow-x:hidden;
+      overflow-y:auto;
       .box-shadow;
-      .over-hidden;
+      .transition2;
       ul{
         li{
           border-bottom:1px dashed @gray;
@@ -448,7 +449,7 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
         }
       }
       #close-menu{
-        font-size:32px;
+        font-size:42px;
         display:inline-block;
         position:absolute;
         top:5px;
@@ -844,7 +845,7 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
       width:100%;
       display:block;
       margin:0 auto;
-      padding:18px;
+      padding:18px 18px 50px;
       position:relative;
       overflow:hidden;
       .radius2;
@@ -852,7 +853,7 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
         font-size:22px;
         position:absolute;
         top:0px;
-        right:5px;
+        right:11px;
         line-height:normal;
         cursor:pointer;
         .f-white;
@@ -873,12 +874,14 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
         width:76px;
         display:inline-block;
         padding:5px 0;
-        position:relative;
+        position:absolute;
+        bottom:12px;
         opacity:0.8;
         .f-black;
         .t-center;
         &.prev{
           background-position:0 0;
+          left:18px;
           .no-transition;
           &:hover{
            background-position:0 -30px;
@@ -889,7 +892,7 @@ audio[controls], canvas, video {display:inline-block;*display:inline;*zoom:1}
         &.next{
           background-position:-90px 0;
           .no-transition;
-          left:62%;
+          right:18px;
           &:hover{
            background-position:-90px -30px;
            opacity:1;

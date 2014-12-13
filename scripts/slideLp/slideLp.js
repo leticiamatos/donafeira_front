@@ -30,7 +30,7 @@ $.fn.slideLp = function(options){
     navButtons: true,
     prevName: "<",
     nextName: ">",
-    keyboard: true,
+    keyboard: false,
     touch: false,
     thresholdX: 100,
     thresholdY: 100,

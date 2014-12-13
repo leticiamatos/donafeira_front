@@ -1,9 +1,25 @@
 Application = {
   init: function () {
+    this.menuResponsive();
     this.menuPosition();
     this.sizeCatList();
     this.btCadastre();
   },
+
+  menuResponsive: function(){
+
+    $(".button-menu").on("click", function(){
+      $("#nav-user-responsive").css({
+        right: "0"
+      });
+    });
+    $("#close-menu").on("click", function(){
+      $("#nav-user-responsive").css({
+        right: "-100%"
+      });
+    });
+  },
+
   menuPosition: function(){
     function sizeMenu(){
         var pHeader = $("#wrap-search").offset().left,
