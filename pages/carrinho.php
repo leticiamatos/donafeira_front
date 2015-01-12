@@ -2,7 +2,7 @@
 <?php include "layout/categorys.php"; ?>
 
 <!-- content -->
-<div class="wrap-full bg-white b-top-gray m-bottom-micro pad-bottom pad-top over-hidden">
+<div class="wrap-full bg-white b-top-gray b-bottom-gray m-bottom-micro pad-bottom pad-top over-hidden">
   <div class="container">
     <div class="col-md-12">
       <div class="wrap-titles">
@@ -22,7 +22,7 @@
     </div>
     <div class="col-md-12">
       <div class="table-responsive">
-        <table class="table cart-page no-margin">
+        <table class="table cart-page">
           <tr>
             <th width="20%">&nbsp;</th>
             <th width="30%">Produto</th>
@@ -124,7 +124,7 @@
           <span class="value-prod-promo">R$ <span>...</span></span>
         </div>
         <div id="wrap-bt-finish-cart">
-          <a href="#" class="finish-cart f-white radius2">itens do pedido</a>
+          <a href="#" class="finish-cart f-white radius2">finalizar compra</a>
         </div>
     </div>
   </div>

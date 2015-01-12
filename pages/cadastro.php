@@ -2,7 +2,7 @@
 <?php include "layout/categorys.php"; ?>
 
 <!-- content -->
-<div class="wrap-full bg-white b-top-gray m-bottom-micro pad-bottom pad-top over-hidden">
+<div class="wrap-full bg-white b-top-gray b-bottom-gray m-bottom-micro pad-bottom pad-top over-hidden">
   <div class="container">
     <div class="col-md-4 border-vert over-hidden">
       <div class="wrap-titles">

@@ -3,11 +3,8 @@ var myScroll;
     if($("#wrap-category").length > 0){
       myScroll = new IScroll('#wrap-category',{
         mouseWheel: true,
-        scrollbars: true,
-        scrollX: true,
-        scrollbars: 'custom',
-        eventPassthrough: true,
-        mouseWheel: true
+        scrollbars: false,
+        scrollX: true
       });
     }
     if($("#wrap-table-orders").length > 0){

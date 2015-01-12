@@ -88,6 +88,11 @@
           <span>total</span>
           <span class="value-prod-promo">R$ <span>...</span></span>
         </div>
+
+        <div id="" class="cart-add-box cont float-r clear-b over-hidden add-cart">
+          <a href="#" class="add-cart-bt f-white box-shadow radius2">adicionar itens<br />ao carrinho</a>
+        </div>
+
     </div>
   </div>
 </div>
